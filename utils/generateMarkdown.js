@@ -66,6 +66,8 @@ function renderLicenseBadge(license) {
       return "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
     case "The zlib/libpng License":
       return "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)";
+    case "No license":
+      return "";
     default:
       return "";
   }
@@ -139,6 +141,8 @@ function renderLicenseLink(license) {
       return "[http://www.wtfpl.net/about/](http://www.wtfpl.net/about/)";
     case "The zlib/libpng License":
       return "[https://opensource.org/licenses/Zlib](https://opensource.org/licenses/Zlib)";
+    case "No license":
+      return "";
     default:
       return "";
   }
