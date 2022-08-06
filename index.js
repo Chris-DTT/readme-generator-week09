@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-import generateMarkdown from "./utils/generateMarkdown";
+const generateMarkdown = require("./utils/generateMarkdown");
+
 // TODO: Create an array of questions for user input
 const questions = [
   "What is the title of your project?",
@@ -12,6 +13,7 @@ const questions = [
   "What license are you using?",
 ];
 const licenses = [
+  new inquirer.Separator(),
   "No license",
   new inquirer.Separator(),
   "Apache 2.0 License",
@@ -63,7 +65,7 @@ function init() {
         type: "list",
         message: questions[5],
         choices: licenses,
-        default: licenses[0],
+        default: licenses[1],
       },
     ])
     .then((answers) => {
