@@ -181,4 +181,4 @@ function generateMarkdown(data) {
   ${renderLicenseSection(data.license)}`;
 }
 
-module.exports = generateMarkdown;
+export default generateMarkdown;
