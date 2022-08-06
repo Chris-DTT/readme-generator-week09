@@ -23,6 +23,7 @@ function init() {
         // Something else went wrong
       }
     });
+    
 }
 
 // Function call to initialize app
