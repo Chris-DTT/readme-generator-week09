@@ -74,8 +74,10 @@ function init() {
     .catch((error) => {
       if (error.isTtyError) {
         console.log("Prompt couldn't be rendered in the current environment");
+        console.log(error)
       } else {
         console.log("Something else went wrong");
+        console.log(error)
       }
     });
 }
